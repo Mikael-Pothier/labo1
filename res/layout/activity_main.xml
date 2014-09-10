@@ -1,0 +1,143 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+     <Button
+         android:id="@+id/number8"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignBaseline="@+id/number9"
+         android:layout_alignBottom="@+id/number9"
+         android:layout_alignLeft="@+id/number0"
+         android:contentDescription="@string/number8"
+         android:text="@string/number8"
+         android:onClick="envoyer8" />
+
+     <Button
+         android:id="@+id/number9"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignBottom="@+id/number0"
+         android:layout_marginBottom="42dp"
+         android:layout_toRightOf="@+id/number0"
+         android:contentDescription="@string/number9"
+         android:text="@string/number9"
+         android:onClick="envoyer9" />
+
+     <Button
+         android:id="@+id/number7"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignBaseline="@+id/number8"
+         android:layout_alignBottom="@+id/number8"
+         android:layout_toLeftOf="@+id/number8"
+         android:contentDescription="@string/number7"
+         android:text="@string/number7"
+         android:onClick="envoyer7" />
+
+     <Button
+         android:id="@+id/number6"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_above="@+id/number8"
+         android:layout_toRightOf="@+id/number8"
+         android:contentDescription="@string/number6"
+         android:text="@string/number6"
+         android:onClick="envoyer6" />
+
+     <Button
+         android:id="@+id/number5"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_above="@+id/number8"
+         android:layout_toLeftOf="@+id/number9"
+         android:contentDescription="@string/number5"
+         android:text="@string/number5"
+         android:onClick="envoyer5" />
+
+     <Button
+         android:id="@+id/number4"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_above="@+id/number8"
+         android:layout_toLeftOf="@+id/number8"
+         android:contentDescription="@string/number4"
+         android:text="@string/number4"
+         android:onClick="envoyer4" />
+
+     <Button
+         android:id="@+id/number3"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_above="@+id/number6"
+         android:layout_toRightOf="@+id/number5"
+         android:contentDescription="@string/number3"
+         android:text="@string/number3"
+         android:onClick="envoyer3" />
+
+     <Button
+         android:id="@+id/number2"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_above="@+id/number5"
+         android:layout_toRightOf="@+id/number4"
+         android:contentDescription="@string/number2"
+         android:text="@string/number2"
+         android:onClick="envoyer2" />
+
+     <Button
+         android:id="@+id/number1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_above="@+id/number4"
+         android:layout_alignLeft="@+id/number4"
+         android:contentDescription="@string/number1"
+         android:text="@string/number1"
+         android:onClick="envoyer1" />
+
+     <Button
+         android:id="@+id/number0"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_centerHorizontal="true"
+         android:layout_centerVertical="true"
+         android:contentDescription="@string/number0"
+         android:text="@string/number0" 
+         android:onClick="envoyer0"/>
+
+     <TextView
+         android:id="@+id/texte"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/number7"
+         android:layout_alignRight="@+id/number9"
+         android:layout_below="@+id/number9"
+         android:layout_marginTop="15dp"
+         android:editable="false"
+         android:gravity="center_horizontal" />
+
+     <Button
+         android:id="@+id/valider"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentRight="true"
+         android:layout_below="@+id/texte"
+         android:layout_marginTop="24dp"
+         android:contentDescription="@string/valider"
+         android:text="@string/valider"
+         android:onClick="valider" />
+
+     <Button
+         android:id="@+id/effacer"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignBaseline="@+id/valider"
+         android:layout_alignBottom="@+id/valider"
+         android:layout_toLeftOf="@+id/valider"
+         android:contentDescription="@string/effacer"
+         android:text="@string/effacer"
+         android:onClick="effacer" />
+
+</RelativeLayout>
